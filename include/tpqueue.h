@@ -20,7 +20,7 @@ class TPQueue {
   }
 
  public:
-  TPQueue() :head, tail = nullptr {}
+  TPQueue() :head(nullptr), tail (nullptr) {}
   ~TPQueue() {
     while (head)
       pop();
